@@ -1,0 +1,92 @@
+{
+  "version": "1.0",
+  "id": "640dfd1a-f95f-461b-826a-e09e12f6825c",
+  "label": "Azure resource group %resource_group_name%",
+  "type": "AZURE-RESOURCE-GROUP",
+  "class": "",
+  "autoExpand": false,
+  "skipEveryInstanceFiles": false,
+  "limitToAllowedChildren": false,
+  "extends": [
+    {
+      "name": "Terraform Helper",
+      "moduleBranchPath": "github.com\\infraxys-modules\\terraform\\master",
+      "id": "a3acdf4d-9d7c-4a0f-bbc8-8ea21f667e43"
+    }
+  ],
+  "key": "",
+  "infoHtml": "",
+  "attributes": [
+    {
+      "id": "ebd75255-04ef-4dea-9508-1ebf683b8685",
+      "name": "resource_group_name",
+      "caption": "Name",
+      "type": "java.lang.String",
+      "formColumn": 1,
+      "formOrder": 1100,
+      "visibility": "ALWAYS VISIBLE",
+      "writability": "ALWAYS",
+      "required": true,
+      "isPartOfKey": false,
+      "listOfValues": "",
+      "referenceFilter": "",
+      "referenceValueAttributeName": "",
+      "referenceChildIdFilter": "",
+      "newItemsAllowed": false,
+      "parseWithVelocity": false,
+      "inputPrompt": "",
+      "tooltip": "",
+      "scope": "Instance",
+      "defaultValue": ""
+    },
+    {
+      "id": "7bf8fedf-3f36-400a-8c25-507ef5ecbbac",
+      "name": "resource_group_location",
+      "caption": "Resource group location",
+      "type": "java.lang.String",
+      "formColumn": 1,
+      "formOrder": 1200,
+      "visibility": "ALWAYS VISIBLE",
+      "writability": "ALWAYS",
+      "required": true,
+      "isPartOfKey": false,
+      "listOfValues": "West Europe",
+      "referenceFilter": "",
+      "referenceValueAttributeName": "",
+      "referenceChildIdFilter": "",
+      "newItemsAllowed": true,
+      "parseWithVelocity": false,
+      "inputPrompt": "",
+      "tooltip": "",
+      "scope": "Instance",
+      "defaultValue": "West Europe"
+    }
+  ],
+  "files": [
+    {
+      "id": "682c0c96-4ed2-4234-82be-5410320d39c6",
+      "filename": "azure_resource_group.tf",
+      "includeName": "",
+      "menuCaption": "azure_resource_group.tf",
+      "directory": "",
+      "runsIndependent": false,
+      "runsParallel": false,
+      "runBeforeIndependentActions": false,
+      "parseWithVelocity": true,
+      "executable": false,
+      "saveWith": "CURRENT INSTANCE",
+      "isInteractive": false,
+      "hideRunnerWindow": false,
+      "timeoutSeconds": 3600,
+      "key": "",
+      "menuOrder": 100,
+      "menuSeparatorBefore": false,
+      "hideFromInstanceActionsMenu": false,
+      "hideFromBottomMenu": false,
+      "menuPath": "",
+      "dockerImage": "",
+      "customCommand": ""
+    }
+  ],
+  "allowedChildren": []
+}

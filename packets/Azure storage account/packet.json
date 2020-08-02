@@ -1,0 +1,71 @@
+{
+  "version": "1.0",
+  "id": "e1391246-2fc8-4615-98c1-86a225b0474c",
+  "label": "Azure storage account %storage_account_name%",
+  "type": "AZURE-STORAGE-ACCOUNT",
+  "class": "",
+  "autoExpand": false,
+  "skipEveryInstanceFiles": false,
+  "limitToAllowedChildren": false,
+  "autoGenerate": false,
+  "extends": [
+    {
+      "name": "Terraform Helper",
+      "moduleBranchPath": "github.com\\infraxys-modules\\terraform\\master",
+      "id": "a3acdf4d-9d7c-4a0f-bbc8-8ea21f667e43"
+    }
+  ],
+  "key": "",
+  "infoHtml": "",
+  "attributes": [
+    {
+      "id": "59ac08d8-3092-4955-b9eb-2efddbd014d0",
+      "name": "storage_account_name",
+      "caption": "Name",
+      "type": "java.lang.String",
+      "formColumn": 1,
+      "formOrder": 1100,
+      "visibility": "ALWAYS VISIBLE",
+      "writability": "ALWAYS",
+      "required": true,
+      "isPartOfKey": false,
+      "listOfValues": "",
+      "referenceFilter": "",
+      "referenceValueAttributeName": "",
+      "referenceChildIdFilter": "",
+      "newItemsAllowed": false,
+      "parseWithVelocity": false,
+      "inputPrompt": "",
+      "tooltip": "",
+      "scope": "Instance",
+      "defaultValue": ""
+    }
+  ],
+  "files": [
+    {
+      "id": "8861f52b-8456-471a-9cf1-75f2e3704288",
+      "filename": "azure_storage_account.tf",
+      "includeName": "",
+      "menuCaption": "azure_storage_account.tf",
+      "directory": "",
+      "runsIndependent": false,
+      "runsParallel": false,
+      "runBeforeIndependentActions": false,
+      "parseWithVelocity": true,
+      "executable": false,
+      "saveWith": "CURRENT INSTANCE",
+      "isInteractive": false,
+      "hideRunnerWindow": false,
+      "timeoutSeconds": 3600,
+      "key": "",
+      "menuOrder": 100,
+      "menuSeparatorBefore": false,
+      "hideFromInstanceActionsMenu": false,
+      "hideFromBottomMenu": false,
+      "menuPath": "",
+      "dockerImage": "",
+      "customCommand": ""
+    }
+  ],
+  "allowedChildren": []
+}
